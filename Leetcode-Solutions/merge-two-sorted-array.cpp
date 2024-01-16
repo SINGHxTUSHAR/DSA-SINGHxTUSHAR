@@ -31,4 +31,4 @@ public:
     }
 };
 
-link: https://leetcode.com/problems/merge-sorted-array/solutions/4576915/merge-sorted-arraycoptimised-approach/
+//link: https://leetcode.com/problems/merge-sorted-array/solutions/4576915/merge-sorted-arraycoptimised-approach/
