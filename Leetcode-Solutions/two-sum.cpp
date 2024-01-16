@@ -38,3 +38,5 @@ public:
     }
     
 };
+
+//link: https://leetcode.com/problems/two-sum/solutions/4571334/two-sum-solution-cbrut-forcesliding-window/
