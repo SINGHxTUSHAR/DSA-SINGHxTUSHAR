@@ -1,3 +1,4 @@
+/* Author: TUSHAR SINGH */ 
 // Intuition:
 // * We will push the operand to the stack until we get an operation, then perform that operation on the top two elements of stack and then push the result back into stack. 
 //   Repeat the above until we reach at the after end of the string.
