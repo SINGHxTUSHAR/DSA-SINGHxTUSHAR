@@ -55,7 +55,7 @@ public:
         string empty = "";
 
         for(int i=0; i<words.size(); i++){
-            /*Remember to comment out one approach using executing of code*/
+            /*Remember to comment out one approach when executing a code*/
              if(is_palindrome(words[i])){
                  return words[i];
              }
