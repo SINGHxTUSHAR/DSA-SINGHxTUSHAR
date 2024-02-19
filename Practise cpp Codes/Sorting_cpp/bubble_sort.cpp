@@ -1,3 +1,5 @@
+/*Author: TUSHAR SINGH*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
