@@ -14,7 +14,7 @@ void bubble_sort(int arr[] , int n){
         }if(did_swap == false) break;
     }
 
-    cout<<"arr after selection sort: "<<endl;
+    cout<<"arr after bubble sort: "<<endl;
     for(int k=0; k<n; k++){
         cout<<arr[k]<<" ";
     }
