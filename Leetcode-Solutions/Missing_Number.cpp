@@ -1,3 +1,5 @@
+/*Author: TUSHAR SINGH*/
+
 // Intuition:
 // Range will be 0 to nums.size(). Calculate the total sum as per range and subtract it with current sum of nums, which will return the number which is not present in nums as each ele in nums is unique.
 
