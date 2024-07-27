@@ -16,16 +16,42 @@
 // No auxiliary space is used.
 
 // Code:
-class Solution {
+class Solution
+{
 public:
-    int missingNumber(vector<int>& nums) {
+    int missingNumber(vector<int> &nums)
+    {
 
-        int n = nums.size();
-        //sum as per range
-        int totalSum = (n*(n+1))/2;
-        //number which is not present in nums as per range
-        return totalSum - accumulate(nums.begin(),nums.end(),0);       
+        // int n = nums.size();
+        //     unordered_map<int,int>mpp;
+        //     for(int i=0; i<n; i++){
+        //         mpp[nums[i]]++;
+        //     }
+
+        //    for (int i = 0; i <= n; i++) {
+        //         if (mpp[i] == 0) {
+        //         return i;
+        //         }
+        //     }return -1;
+
+        /*summation of total n - given sum of n ele*/
+        //     int sum{0};
+        //     for(int i=0; i<n; i++){
+        //         sum+=nums[i];
+        //     }return (n*(n+1)/2) - sum;
+
+        /*since XOR : a^a=0, we will be left with resultant number*/
+        int xor1{0}, xor2{0};
+
+        for (int i = 0; i < n; i++)
+        {
+
+            xor1 ^= i; // XOR with 0 to n-1
+            xor2 ^= nums[i];
+        }
+        xor1 = xor1 ^ n; // to complete the xor upto n
+        return xor1 ^ xor2;
     }
 };
 
-//LINK: https://leetcode.com/problems/missing-number/solutions/4755873/missing-number-cpp-beats-98-detail-explanation-optimized
+// LINK: https://leetcode.com/problems/missing-number/solutions/4755873/missing-number-cpp-beats-98-detail-explanation-optimized
