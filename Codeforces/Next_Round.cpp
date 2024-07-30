@@ -2,13 +2,14 @@
 using namespace std;
 
 int main(){
-    int n, k;
+    int n, k, cnt{0};
     cin>>n>>k;
 
-    int nums[n];
+    int nums[50];
     for(int i=0; i<n; i++){
         cin>>nums[i];
-    }if(nums[k]==0) cout<<"0";
-    else cout<<k+1;
+    }for(int i=0; i<n; i++){
+        if(nums[i] >= nums[k-1] && nums[i]>0) cnt++;
+    }cout<<cnt;
     return 0;
 }

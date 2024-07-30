@@ -10,7 +10,9 @@ int main(){
 
     for(int i=0; i<n; i++){
         cin>>ch;
-        if(ch=="x++" || ch=="++x") x++;
+        // if(ch=="x++" || ch=="++x") x++;
+        // else x--;
+        if(ch[1]=='+') x++;
         else x--;
     }cout<<x;
     return 0;
