@@ -87,4 +87,40 @@ public:
     }
 };
 
+
+/*  //heap method
+class Solution {
+public:
+    typedef pair<char, int> p;
+
+    //comprator func() for the max freq ele
+    struct cmp{
+        bool operator()(p &p1, p &p2){
+            return p1.second < p2.second;
+        }
+    };
+    string frequencySort(string s) {
+        priority_queue<p, vector<p>, cmp>pq;
+
+        unordered_map<char, int>mpp;
+
+        //cal frew in map mpp
+        for(auto &ele : s) mpp[ele]++;
+
+        //push the data to pq from mpp
+        for(auto &it : mpp) pq.push({it.first, it.second});
+
+        string ans = "";
+
+        while(!pq.empty()){
+            p temp = pq.top();
+            pq.pop();
+
+            ans += string(temp.second, temp.first);
+        }
+        return ans;
+    }
+};
+*/
+
 //LINK: https://leetcode.com/problems/sort-characters-by-frequency/solutions/4691239/sort-characters-by-frequency-cpp-detail-explanation-optimal-approach-beats-98
