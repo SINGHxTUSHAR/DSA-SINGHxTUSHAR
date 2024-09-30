@@ -38,15 +38,15 @@ public:
 
         /*Approach-1 || T.C = O(nlogn) & S.C = O(logn)*/ 
         /*BRUTE-FORCE*/
-        int n = nums.size();
+        // int n = nums.size();
         
-        //squaring each element in the nums
-        for(int i=0; i<n; i++){
-            nums[i] = nums[i]*nums[i];
-        }
-        sort(nums.begin(),nums.end());
+        // //squaring each element in the nums
+        // for(int i=0; i<n; i++){
+        //     nums[i] = nums[i]*nums[i];
+        // }
+        // sort(nums.begin(),nums.end());
 
-        return nums; 
+        // return nums; 
 
         /*Approach-2 || T.C = O(n) & S.C = O(n)*/
         /*TWO-POINTER*/
