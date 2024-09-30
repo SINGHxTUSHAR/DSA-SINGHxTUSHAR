@@ -33,6 +33,26 @@ public:
                 sumFreq = currFreq;
             }else if(currFreq == maxFreq) sumFreq += currFreq;
         }return sumFreq;  
+
+        /*another approach*/
+        int n = nums.size();
+        vector<int> cnt(101);
+
+        //cal the freq of each ele in nums & maxfreq of ele in nums
+        int maxfreq{0};
+        for(auto &num : nums){
+            cnt[num]++;
+            maxfreq = max(maxfreq, cnt[num]);
+        }
+
+        // cal the ele with currfreq = maxfreq & adding them
+        // int result{0};
+        // for(int i=0; i<101; i++){
+        //     if(cnt[i] == maxfreq) result += maxfreq;
+        // }return result;
+
+        //use STL
+        return count(begin(cnt), end(cnt), maxfreq) * maxfreq;
     }
 };
 
