@@ -35,7 +35,7 @@ int main()
                 max_dist_stations = max(max_dist_stations, road[i] - road[i - 1]);
             }
         }
-        cout << max_dist_stations;
+        cout << max_dist_stations<<endl;
     }
     return 0;
 }
