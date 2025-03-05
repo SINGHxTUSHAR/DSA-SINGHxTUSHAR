@@ -23,3 +23,5 @@ int main(){
         else cout<<"NO"<<endl;
     }return 0;
 }
+
+//https://codeforces.com/problemset/problem/1903/A
